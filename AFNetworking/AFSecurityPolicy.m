@@ -120,7 +120,7 @@ static NSArray * AFPublicKeyTrustChainForServerTrust(SecTrustRef serverTrust) {
 
         SecTrustRef trust = NULL;
 
-        OSStatus status = SecTrustCreateWithCertificates(certificates, policy, &trust);
+        OSStatus status __unused = SecTrustCreateWithCertificates(certificates, policy, &trust);
         NSCAssert(status == errSecSuccess, @"SecTrustCreateWithCertificates error: %ld", (long int)status);
 
         SecTrustResultType result;
