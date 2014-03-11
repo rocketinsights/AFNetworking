@@ -98,7 +98,7 @@
 /**
  The request used by the operation's connection.
  */
-@property (readonly, nonatomic, strong) NSURLRequest *request;
+@property (/*readonly, */nonatomic, strong) NSURLRequest *request;
 
 /**
  The last response received by the operation's connection.
